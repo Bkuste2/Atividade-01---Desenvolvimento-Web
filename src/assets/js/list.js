@@ -31,7 +31,9 @@ const deleteRegister = (id) => {
   const registers = getRegistrations()
   const registrations = registers.filter(register => register.id != +id)
   const confirmation = window.confirm("Deseja realmente deletar este registro?")
-  if(!confirmation) return 
+  
+  if(!confirmation) return
+
   localStorage.setItem("registrations", JSON.stringify(registrations, null, 2))
   window.location.reload();
 }
