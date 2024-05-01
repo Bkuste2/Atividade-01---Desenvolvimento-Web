@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listar Vagas</title>
+  <link href="./assets/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex flex-col w-1/2 h-screen m-auto items-center p-10 ">
+    <div class="flex w-full items-center justify-between mb-14">
+      <h1 class="text-6xl text-white">Cadastro de Reservas</h1>
+      <a href="index.html" class="border-b-2 text-gray-300 pb-2">Ir para Lista</a>
+    </div>
+
+    <form id="registerForm" class="flex flex-col gap-3 w-full h-full">
+      <h3 class="text-2xl text-gray-300">Sobre o Proprietário</h3>
+      <input type="text" 
+      class="w-full h-12 bg-gray-100 p-2 rounded-lg placeholder:text-gray-500"
+      placeholder="Nome do proprietário" name="name">
+      <input type="text" 
+      class="w-full h-12 bg-gray-100 p-2 rounded-lg placeholder:text-gray-500"
+      placeholder="Número do apartamento" name="apartmentNumber">
+      <input type="text" 
+      class="w-full h-12 bg-gray-100 p-2 rounded-lg placeholder:text-gray-500"
+      placeholder="Bloco do apartamento" name="apartmentBlock">
+      <h3 class="text-2xl text-gray-300 mt-10">Sobre o Carro</h3>
+      <input type="text" 
+        class="w-full h-12 bg-gray-100 p-2 rounded-lg placeholder:text-gray-500"
+        placeholder="Placa do veículo" name="plate">
+      <input type="text" 
+        class="w-full h-12 bg-gray-100 p-2 rounded-lg placeholder:text-gray-500"
+        placeholder="Modelo do veículo" name="model">
+      <input type="text" 
+        class="w-full h-12 bg-gray-100 p-2 rounded-lg placeholder:text-gray-500"
+        placeholder="Cor do veículo" name="color">
+      <input type="text" 
+        class="w-full h-12 bg-gray-100 p-2 rounded-lg placeholder:text-gray-500"
+        placeholder="Número da vaga de estacionamento" name="parkingNumber">
+    </form>
+
+    <button
+      class="bg-gray-100 px-10 py-3 rounded-xl text-gray-900 font-semibold hover:bg-gray-300 transition-all" 
+      onclick="addRegistration()"
+    >
+      Adicionar Reserva
+    </button>
+  </div>
+
+  <script src="./assets/js/create.js"></script>
+</body>
+
+</html>

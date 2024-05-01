@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./assets/css/index.css" rel="stylesheet">
+</head>
+
+<body onload="getList()">
+  <div class="flex flex-col w-1/2 h-screen m-auto items-center p-10 ">
+    <h1 class="text-6xl text-white mb-14">Lista de Reservas</h1>
+
+    <table class="bg-gray-300 text-gray-900 rounded-2xl">
+      <thead>
+        <tr>
+          <th class="border-r-2 p-4">Id</th>
+          <th class="border-r-2 p-4">Nome</th>
+          <th class="border-r-2 p-4">Apartamento</th>
+          <th class="border-r-2 p-4">Bloco</th>
+          <th class="border-r-2 p-4">Placa</th>
+          <th class="border-r-2 p-4">Modelo</th>
+          <th class="border-r-2 p-4">Cor</th>
+          <th class="border-r-2 p-4">Vaga</th>
+          <th> 
+            <a class="h-full p-4 w-full text-2xl text-blue-700" href="./create.html">+</a>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="registerList">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./assets/js/list.js"></script>
+</body>
+
+</html>
